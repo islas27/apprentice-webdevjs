@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NS Apprentice</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <script src="https://use.fontawesome.com/78ed968850.js"></script>
+    <style>
+      /* Sticky footer styles -------------------------------------------------- */
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML Code goes here -->
+    <div class="container">
+      <div class="page-header">
+        <h1>NS Apprentice</h1>
+      </div>
+      <div>
+        <h5>Instrucciones</h5>
+        <p>
+          La actividad es simple, guardar y mostrar una lista de usuarios. <br>
+          A continuacion encontraras un template y vamos a trabajar con el. Have fun! :)<br>
+          Puedes encontrar el markup de nuevos elementos usuando bootstrap <a href="https://bootswatch.com/paper/" class="btn btn-primary btn-xs" target="_blank">aqui</a>
+        </p>
+      </div>
+      <hr>
+      <div>
+        <div class="col-lg-6 col-xs-12">
+          <h4>Guardar usuarios</h4><br><br>
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Nuevo usuario</legend>
+              <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">Email</label>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control" id="input-email" placeholder="someone@somewhere.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" class="col-lg-3 control-label">Full Name</label>
+                <div class="col-lg-9">
+                  <input type="text" class="form-control" id="input-name" placeholder="Jane Dow">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-9 col-lg-offset-3">
+                  <button type="reset" class="btn btn-default">Cancel</button>
+                  <button id="btn-submit" class="btn btn-primary">Catch submit event here</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-lg-6 col-xs-12">
+          <h4>Lista de usuarios</h4><br>
+          <div class="user-list" id="user-list">
+            <div class="panel panel-primary" id="user">
+              <div class="panel-heading" >
+                <h3 class="panel-title">Inserta un usuario aqui</h3>
+              </div>
+              <div class="panel-body">
+                Y su correo
+              </div>
+            </div>
+          </div>
+          <button id="btn-request" class="btn btn-primary">Get Users</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Made with <i class="fa fa-heart fa-fw"></i> in Nearsoft.</span>
+      </div>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="./app.js"/></script>
+  </body>
+</html>
