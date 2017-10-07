@@ -14,7 +14,7 @@ npm install -g spa-http-server eslint nodemon
 3. Clona este repositorio o descarga el código a tu computadora.
 ```sh
 # usa git para clonar este repositorio
-git clone https://github.com/islas27/ns-apprentice-webdev.git
+git clone https://github.com/islas27/apprentice-webdevjs.git
 ```
 Si usas Windows y no tienes un cliente instalado, prueba
 [Github Desktop](https://desktop.github.com/) o usa las herramientas en tu
@@ -53,6 +53,9 @@ Si lo que quieres es algo rápido y sin mucha complicación, revisa
 necesidad de configurar permisos ni nada extravagante. De ahí en delante,
 busca en internet, muchas paginas y servicios proveen acceso a algunos de sus datos
 por medio de API's 'publicas'.
+
+## ¡Algo no funciona correctamente en este proyecto!, ¿que hago?
+Puedes reportarlo por medio de un GitHub Issue, o si te sientes aventurero, haz un fork de este repositorio, corrigelo y mandame un Pull Request!
 
 ## Preguntas, consejos, etc?
 Puedes contactarme en mi correo <jislas@nearsoft.com> o por
