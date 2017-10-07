@@ -35,5 +35,23 @@ router.post('/users', (req, res) => {
 
 // Add another routes for the API, I suggest the following:
 // How to update a user, how to delete it, how to get all users... Have fun :)
+router.get('/users', (req, res) => {
+  res.status(200).send(db.getUsers());
+});
+
+router.get('/users/:id', (req, res) => {
+  res.status(200).send(db.getUserById(req.params.id));
+});
+
+router.put('/users/:id', (req, res) => {
+  const user = req.body;
+  db.updateUser(req.params.id, user);
+  res.status(200).send({ msg: 'ok' });
+});
+
+router.delete('/users/:id', (req, res) => {
+  db.deleteUser(req.params.id);
+  res.status(200).send({ msg: 'ok' });
+});
 
 module.exports = router;
